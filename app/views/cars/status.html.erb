@@ -1,0 +1,21 @@
+<h1> Status Page </h1>
+<p>
+<%= @cars.car_info %>
+</p>
+
+<form action="status" method="get">
+    <input type="submit" name="accelerate" value="Accelerate">
+    <input type="submit" name="brake" value="Brake">
+    <input type="submit" name="lights" value="Lights">
+    <br />
+    <br />
+    <input type="radio" name="parkingbrake" value="Parking brake is engaged"> <p> The parking brake is engaged </p>
+    <br />
+    <input type="radio" name="parkingbrake" value="Parking brake is not engaged"> <p> The parking brake is not engaged </p>
+</form>
+
+<p>
+    Your speed is: <%= @cars.speed %>
+    <br>
+    Your lights are: <%= @cars.lights_status %>
+</p>
